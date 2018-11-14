@@ -1,0 +1,106 @@
+body{
+  background: url('../img/back1.jpg') fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+} 
+html{
+  height: 100%;
+}
+div.wrap-user-information{
+  margin: 0px auto;
+  width: 800px;
+  padding-top: 15%;
+}      
+div.user-information{
+  vertical-align: top;
+  display: inline-block;
+}   
+div.wrap-fieldset-size{
+  padding: 10px;
+}     
+div.contaner-font{
+  padding-top: 10px;
+  text-align: center;
+  display: block;
+}   
+div.contaner-font p{
+  font-size: 30px;
+  font-weight: 800;
+} 
+div .button-p{
+  margin-top: 40px;
+  text-align: center;
+}
+div.wrap-whole-container{
+}       
+div.wrap-whole-container h1{
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+  color: #FFC400;
+}  
+div.wrap-whole-container h3{
+  text-align: center;
+  font-size: 22px;
+  line-height: 39px;
+  margin-top: 20px;
+  color: #fff;
+}  
+ul{
+  list-style: none;
+} 
+#insert-thing{
+  display: inline-block;
+  height: 25px;
+  line-height: 22px;
+}
+div.show-header{
+  display: inline-block;
+}
+.header-title,.header-time{
+  width: 260px;
+  font-size: 22px;
+  font-weight: 600;
+}
+.header-author{
+  width: 220px;
+  font-size: 22px;
+  font-weight: 600;        
+}
+.note-title,.note-time{
+  width: 260px;
+  font-size: 18px;      
+}
+.note-author{
+  width: 220px;
+  font-size: 18px;          
+}
+.fl-left{
+  float: left;
+  text-align: center;
+}
+.div-button{
+  width: 100%;
+}
+
+a.cta-button {
+  font-size: 18px;
+  line-height: 16px;
+  border: 1px solid #fff;
+  margin: 0px 20px;
+  padding: 15px 60px;
+  border-radius: 0;
+  font-family: 'Raleway';
+  font-weight: 800;
+  transition: background 0.3s, border-color 0.3s;
+  margin-top:20px;
+  background: transparent;
+  color:#fff;
+  text-decoration:none;
+}
+a.cta-button:hover{
+  background:#fff;
+  color:#000;
+}
+

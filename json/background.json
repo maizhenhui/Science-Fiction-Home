@@ -1,0 +1,18 @@
+[ 
+  { 
+    "name":"星系", 
+    "url":"./dynamic-background/plant1/index.html"
+  }, 
+  { 
+    "name":"3D地球", 
+    "url":"./dynamic-background/plant2/index.html"
+  }, 
+  { 
+    "name":"太阳系", 
+    "url":"./dynamic-background/plant3/index.html"
+  }, 
+  { 
+    "name":"黑洞", 
+    "url":"./dynamic-background/heidong/index.html"
+  }
+] 

@@ -1,0 +1,310 @@
+body{
+  background: url(../dynamic-background/default-background.jpg) fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:1700px;
+}   
+#background-container{
+  width: 100%;
+  height: 100%;
+}
+div.wrap-user-information{
+  margin: 0px auto;
+  max-width:1100px;   
+  height: 2600px;
+} 
+div.wrap-popularity-area{
+  position: relative;
+  height: 1200px;
+}         
+ul{
+  list-style-type: none;
+}
+li{
+  list-style: none;
+}   
+div.news-title{
+  font-size: 35px;
+  text-align: center;
+  line-height: 70px;
+  color: white;
+  font-weight: 800;
+}
+.f-l{
+  position: relative;
+  float: left;
+}
+.f-r{
+  position: relative;
+  float: right;
+}
+.wrap-popularity{
+  position: relative;
+  height: 490px;
+  width: 320px;
+  transform-style: preserve-3d;
+  transition: ease-in-out 600ms;
+  perspective:1000px;
+}
+.popularity-middle{
+  margin:0px 70px;
+}
+.wrap-popularity ul{
+  height: 50px;
+}
+.wrap-popularity-content{
+  height: 430px;
+}
+.wrap-popularity-content ul{
+  height: 430px;
+  list-style:none;
+}
+.popularity-title{
+  line-height: 50px;
+  text-align: center;
+  font-size: 25px;
+  width: 97%;
+  border-bottom:3px solid #f60;
+  color: black;
+}
+.popularity-time{
+  margin-top: 1px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 20px;
+  width: 19%;
+  border-bottom:1px solid #e0e0e0;
+}    
+.popularity-time a{
+  text-decoration:none;
+  color: white;
+}
+/*
+.popularity-time:hover{
+  border-top:3px solid #f60;
+  border:1px solid #e0e0e0;
+  box-shadow:1px -3px 5px rgba(0,0,0,.2);
+  border-bottom:0;
+}  
+*/
+li.popularity-content{
+  height: 42px;
+  overflow:hidden;
+  width: 320px;
+  border-bottom:1px dotted #cecece;
+}
+.popularity-content i{
+  height: 18px;
+  width: 18px;
+  float: left;
+  line-height: 19px;
+  margin-top: 12px;
+  font-style:normal;
+  font-size: 12px;
+  text-align: center;
+  margin-right: 15px;
+  font-weight: bolder;
+}      
+.popularity-content a{
+  color: #f33371;
+  text-decoration:none;
+  float: left;
+  font-size: 15px;
+  line-height: 40px;  
+  transition:all .2s; 
+}
+.popularity-content a:hover{
+  color: #f60;
+}    
+.one,.two,.three{
+  color:white;
+}  
+.other{
+  color: black;
+  background-color: gray;
+}
+.one{
+  background-color: red;
+}
+.two{
+  background-color: #f60;
+}
+.three{
+  background-color: #FFC125;
+}   
+hr.div-area1{
+  margin-top: 20px;
+  margin-bottom: 50px;
+  width: 1100px;
+  position: relative;
+}  
+hr.div-area2{
+  margin-top: 50px;
+  margin-bottom: 20px;
+  width: 1100px;
+  position: relative;
+}  
+hr.div-area3{
+  margin-top: 50px;
+  margin-bottom: 20px;
+  width: 1100px;
+  position: relative;
+}  
+.wrap-spaek-navi{
+  height: 48px;
+  width: 100%;
+}
+.fa-comments-o{
+  color: #0a1728;
+  float: left;
+  margin-right: 7px;
+}
+.fa-refresh{
+  margin-right: 7px;
+}
+#roundabout-title{
+  color: white;
+  font-size: 45px;
+  width: 1100px;
+  text-align: center;
+  /*margin-top: 30px;*/
+  line-height: 1.1;
+  position: relative;
+}
+.hide-cover{
+  float: right;
+  overflow: hidden;
+}
+.protect{
+  height: 130px;
+  width: 1100px;        
+}
+.front,
+.back {
+  display: block;
+  border-radius: 6px;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: ease-in-out 600ms;
+}
+.front {
+  background-size: cover;
+  /*padding: 2rem;*/
+  font-size: 1.618rem;
+  font-weight: 600;
+  color: #fff;
+  overflow: hidden;
+  font-family: Poppins, sans-serif;
+  opacity: 0.90;
+}
+.front:before {
+  position: absolute;
+  display: block;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #1a9be6, #1a57e6);
+  opacity: .25;
+  z-index: -1;
+}
+.wrap-popularity:hover .front {
+  transform: rotateY(180deg);
+}
+.wrap-popularity:nth-child(even):hover .front {
+  transform: rotateY(-180deg);
+}
+.back {
+  background: #bbbbbb;
+  opacity:0.75;
+  transform: rotateY(-180deg);
+  padding: 0 10px;
+}
+.wrap-popularity:hover .back {
+  transform: rotateY(0deg);
+}
+.wrap-popularity:nth-child(even) .back {
+  transform: rotateY(180deg);
+}
+.wrap-popularity:nth-child(even):hover .back {
+  transform: rotateY(0deg);
+}
+.front p{
+  margin-top: 30px;
+  /*font-family:"FZShuTi","LiSu","YouYuan","KaiTi,Microsoft","JhengHei";*/
+  font: 600 50px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff;
+  text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbbbbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaaaaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);     
+  -webkit-transition: .2s all linear;
+}
+#movie_area .front{
+  background-image: url(../img/movie.jpg);
+}
+#novel_area .front{
+  background-image: url(../img/novel.jpg);
+}   
+#comic_area .front{
+  background-image: url(../img/comic.jpg);
+}         
+
+.wrap-movie-area{
+  height: 400px;
+  background: url(../img/timg.jpg) no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+  background-position: center -285px;
+  box-shadow: 1px 1px 1px black;
+  overflow: hidden;  
+  transition: .3s
+}
+
+.wrap-movie-area:hover{
+  opacity: 1.0;
+  box-shadow: 3px 3px 1px black;
+}
+
+.wrap-comic-area{
+  height: 400px;
+  background: url(../img/comic-area.jpg) no-repeat;
+  background-size: cover;
+  background-position: center -250px
+  ;margin-top: 20px;
+  opacity: 0.7;
+  box-shadow: 1px 1px 1px black;
+  overflow: hidden;
+  transition: .3s
+}
+
+.wrap-comic-area:hover{
+  opacity: 1.0;
+  box-shadow: 3px 3px 1px black;
+}
+
+.wrap-novel-area{
+  height: 400px;
+  background: url(../img/novel-area.png) no-repeat;
+  background-size: cover;
+  background-position: center -115px;
+  margin-top: 20px;
+  opacity: 0.8;
+  width: 730px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px black;
+  overflow: hidden;
+  transition: .3s
+}
+
+.wrap-novel-area:hover{
+  opacity: 1.0;
+  box-shadow: 3px 3px 1px black;
+}

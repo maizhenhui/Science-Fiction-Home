@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>后台</title>
+
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/reset-my.css">
+    <link rel="stylesheet" href="../css/default-style.css">
+
+    <script src="../jquery/jquery-3.3.1.min.js"></script>
+    <script src="../jquery/jquery.ui.widget.js"></script>
+    <script src="../jquery/jquery.iframe-transport.js"></script>    
+    <script src="../jquery/jquery.fileupload.js"></script>
+    <script src="./js/comic-send.js"></script>
+    <style>
+      /*#00a1d6*/
+      body{
+        background: url('../img/back1.jpg') fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }  
+      div.wrap-user-information{
+        margin: 0px auto;
+        max-width:1100px;   
+        padding-top:100px;
+      }  
+      div.wrap-edit-area {
+        margin: 0px auto;
+        width: 800px;
+        background-color:#fff;
+        border-radius: 4px;
+      }
+      .left{
+        float: left;
+        width: 150px;
+        height: 570px;
+        position: relative;     
+      }
+      .right{
+        float: left;
+        width: 650px;
+        height: 570px;
+        position: relative;
+        border-top:1px solid #e1e2e5;
+      } 
+      ul.admin-navi li img{
+        width:30px;
+        height:30px;
+        float:left;
+        margin-left: 30px;
+        margin-top: 5px;
+      }
+      ul.admin-navi{
+        width:150px;
+        position: absolute;
+      }
+      div.wrap-input-area{
+        margin-top: 10px;
+      }
+      .comic-title{
+        border:1px solid #bfcbd9;
+        outline:none;
+        border-radius:4px;
+        transition:border-color .2s cubic-bezier(.645,.045,.355,1);
+        padding: 5px 10px;
+        color: #1f2d3d;
+        font-size:14px;
+        width: 490px;
+      }
+      .comic-content{
+        padding-left: 10px;
+        padding-top: 5px;
+        font-family: PingFangSC-Regular, Verdana, Arial, 微软雅黑, 宋体;
+        font-size: 14px;
+        line-height:1.5;
+        color: #1f2d3d;
+        width: 500px;
+        height: 411px;
+        resize: none;
+        border:1px solid #bfcbd9;
+        transition:border-color .2s cubic-bezier(.645,.045,.355,1);
+        border-radius: 4px;   
+        outline:none;
+        float: left;
+      }  
+      li.m-normal{
+        height: 60px;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 60px;
+        border-top:1px solid #e1e2e5;
+        border-right:1px solid #e1e2e5;
+        background-color:#fafafa;
+        cursor: pointer;
+      }
+      #roundabout-edit{
+        border-bottom: 1px solid #e1e2e5;
+      }
+      #comic-send{
+        background: #00a1d7!important;
+        color: #fff;
+      }
+      #movie-send:hover,#novel-send:hover,#news-send:hover,#rank-edit:hover,#roundabout-edit:hover,#list-edit:hover{
+        background-color: #e1e4ea;
+      }
+      li.i-content{
+        margin-top: 5px;
+        height: 420px;
+      }
+      li.i-normal{
+        height: 40px;
+      }   
+      ul.admin-navi li{
+        text-align: center;
+        list-style:none;
+      }
+      ul.input-area li{
+        text-align: left;
+        list-style:none;
+        line-height: 40px;
+        padding-left: 10px;
+      }    
+      button.button-submit{
+        display: block;
+        height: 40px;
+        width: 100px;
+        background-color: #00a1d6;
+        color: white;
+        border-radius: 5px;
+        outline: none;
+        margin-left:10px;
+        margin-top:20px;
+        cursor:pointer;
+        float: left;
+      }    
+      .button-submit:hover{
+        background-color: #00b5e5;
+      }
+      div.border-line{
+        position: relative;
+        margin-top:10px;
+        margin-left:10px; 
+        margin-right:10px;
+        width: 1px;
+        background: #e5e9ef;
+        height: 155px;
+        float: left;
+      }
+      .admin-title{
+        font-size: 30px;
+        font-weight: 600;
+        text-align: center;
+        padding: 20px 0px;
+      }
+      .wrap-upload{
+        background:#00a1d6;
+        color:white;
+        height:30px;
+        width: 70px;
+        border-radius: 5px;
+        line-height: 30px;
+        text-align: center;
+        float: left;
+        margin-left:10px;
+      }
+      .left a{
+        color: black;
+        text-decoration: none;
+      }   
+      .admin-content{
+        display: inline-block;
+      }            
+    </style>
+  </head>
+  <body>
+    <div class="wrap-user-information">
+      <div class="wrap-edit-area" data-aos="flip-left">
+        <div class="admin-title">科幻之家-后台</div>
+        <div class="admin-content">
+          <div class="left"> 
+            <ul class="admin-navi">
+              <a href="./index.html"><li class="m-normal" id="news-send">新闻推送</li></a>
+              <a href="./novel-send.html"><li class="m-normal" id="novel-send">小说推送</li></a>
+              <li class="m-normal" id="comic-send">动漫推送</li>
+              <a href="./movie-send.html"><li class="m-normal" id="movie-send">电影推送</li></a>
+              <a href="./list-edit.html"><li class="m-normal" id="list-edit">推送列表</li></a>
+              <a href="./rank-edit.html"><li class="m-normal" id="rank-edit">排行编辑</li></a>
+              <a href="./roundabout-edit.html"><li class="m-normal" id="roundabout-edit">轮播管理</li></a>
+            </ul>
+          </div>     
+          <div class="right">
+            <div class="wrap-input-area"> 
+              <ul class="input-area">
+                <li class="i-normal"><input type="text" class="comic-title" id="comic_title" autocomplete="off" placeholder="输入推送标题" maxlength="20"></li>
+                <li class="i-content">
+                  <div contentEditable="true" class="comic-content" id="comic_content" style="overflow-y:auto;"></div>
+                  <div class="wrap-upload">
+                    <label for="chooseImage">
+                    上传图片
+                    </label>
+                  </div>
+                  <input type="file" id="chooseImage" style="display: none;" name="file" accept="image/png,image/jpeg,image/gif" multiple="multiple" />
+                </li>
+              </ul>            
+            </div>
+            <button id="button_submit" class="button-submit">发送</button>
+          </div>
+        </div
+      </div>  
+    </div>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>科幻回复</title>
+    <link rel="stylesheet" href="./css/reset-my.css">
+    <link rel="stylesheet" href="./css/aos.css">
+    <link rel="stylesheet" href="./css/note-reply.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/default-style.css">
+    <link rel="stylesheet" href="./css/navi.css">
+    
+    <script src="jquery/jquery-3.3.1.min.js"></script>
+    <script src="jquery/aos.js"></script>
+    <script src="js/note-reply.js"></script>
+  </head>
+  <body>
+    <script src="./js/background.js"></script>
+    <script src="js/navi.js"></script>
+    <div class="wrap-user-information">
+      <div class="wrap-reply-size" data-aos="flip-up">
+        <h1>回复想法</h1>
+        <div class="wrap-reply-area">
+          <div class="user-information">
+          <ul>
+            <li>
+              <div class="wrap-reply-title">
+                <p class="reply-thing">标题：</p>
+                <div id="reply_title" class="login-data"></div>
+              </div>
+            </li>
+            <li>
+              <div class="wrap-reply-content">
+                <p class="reply-thing">内容：</p>
+                <textarea class="reply-content" id="reply_content"></textarea>
+              </div>
+            </li>
+          </ul>
+          </div>            
+          <div id="confirm_content" class="confirm-style"></div>
+          <button id="button_submit" class="button-submit">回复</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

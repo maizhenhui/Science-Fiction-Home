@@ -1,0 +1,115 @@
+body{
+  background: url(../dynamic-background/default-background.jpg) fixed;
+  background-size: cover;
+  background-repeat:no-repeat;  
+}    
+div.wrap-user-information{
+  opacity:0.8;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;    
+}
+div.wrap-user-information:hover{
+  opacity:0.95;
+}   
+div.wrap-user-information{
+  margin: 0px auto;
+  width: 800px;
+}      
+div.user-information{
+  margin: 0px 20px;
+  display: inline-block;
+}   
+div.wrap-fieldset-size{
+  padding: 0px 30px;
+}    
+div.wrap-send-area{
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px black;
+  -webkit-transition: 0.25s;
+  background-color: #041e30;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  color: #fff;
+}         
+div.login-data{
+  font-size: 14px;
+  font-family: PingFangSC-Regular, Verdana, Arial, 微软雅黑, 宋体;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 0px 0px 0px 11px;
+}
+div.confirm-style{
+  color: red;
+  margin-left: 10px;
+}
+div.confirm-result p{
+  color: red;
+  font-weight: 600;
+}            
+p.input-thing{
+  font-size: 22px;
+  font-weight: 600;
+}    
+p{
+  font-family: PingFangSC-Regular, Verdana, Arial, 微软雅黑, 宋体;
+}
+input.send-content{
+  font-family: PingFangSC-Regular, Verdana, Arial, 微软雅黑, 宋体;
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 300; 
+  margin: 0px 0px 0px 5px;
+  padding: 0px 0px 0px 6px;
+  width: 210px;
+  border: 1px solid black;
+  height: 20px;
+  border-radius: 5px;
+  outline: none;
+  background-color: #4c4040;
+  color: #fff;
+} 
+textarea.send-content{
+  margin: 0px 0px 0px 5px;
+  padding: 0px 0px 0px 6px;
+  font-family: PingFangSC-Regular, Verdana, Arial, 微软雅黑, 宋体;
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 300; 
+  width: 600px;
+  height: 200px;
+  resize: none;
+  overflow: auto;
+  overflow-x: hidden;
+  border: 1px solid black;
+  border-radius: 5px;
+  outline: none;
+  background-color: #4c4040;
+  color: #fff;
+}
+button.button-submit{
+  display: block;
+  margin: 0px auto;
+  height: 40px;
+  width: 220px;
+  /*border: 1px solid black;*/
+  border-radius: 3px;
+  outline: none;
+  margin-top: 20px;
+}     
+.fl-left{
+  float: left;
+  height: 40px;
+}
+.wrap-note-author,.wrap-note-title,.wrap-note-content{
+  display: inline-block;
+}
+.wrap-content-confirm{
+  color: red;
+  padding-left: 90px;
+}
+ul{
+  list-style:none;
+} 
+h1{
+  text-align: center;
+}

@@ -1,0 +1,92 @@
+/*speak area*/
+div.wrap-speak-area{
+  margin: 0px auto;
+  max-width:800px;     
+}
+div.user-information{
+  vertical-align: top;
+  display: inline-block;
+}   
+div.wrap-fieldset-size{
+  padding: 10px;
+}     
+div.wrap-speak{
+  background-color: #bbbbbb;
+  border-radius: 5px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,.1);
+  opacity: 0.75;
+  padding: 20px 0px;
+}     
+.speak-title{
+  font-size: 30px;
+  font-weight: 800;
+  width: 130px;
+  float: left;
+}  
+.wrap-speak-title{
+  width: 170px;
+  height: 32px;
+  margin-left: 37%;
+}
+ul{
+  list-style: none;
+} 
+#insert-thing{
+  display: inline-block;
+  height: 25px;
+  line-height: 22px;
+}
+button.button-refresh{
+  display: block;
+  height: 40px;
+  width: 120px;
+  border-radius: 10px;
+  outline: none;
+  margin: 0px 10px;
+  margin-left: 41%;
+  padding:0px 10px;
+  background-color: #bbbbbb;
+}  
+.button-refresh p{
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 31px;
+}
+div .show-header{
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.header-title,.header-time{
+  width: 260px;
+  font-size: 22px;
+  font-weight: 600;
+}
+.header-author{
+  width: 220px;
+  font-size: 22px;
+  font-weight: 600;        
+}
+.note-title,.note-time{
+  width: 260px;
+  font-size: 18px;      
+}
+.note-author{
+  width: 220px;
+  font-size: 18px;          
+}
+.fl-left{
+  float: left;
+  text-align: center;
+}
+.div-button{
+  width: 100%;
+}       
+
+.fa-plus-circle{
+  color:#fff;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;   
+}
+.fa-plus-circle:hover{
+  color:#f60;
+}

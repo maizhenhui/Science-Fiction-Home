@@ -1,0 +1,11 @@
+body,tr,tbody,td,table,div,input,p,button,a,label,i,ul,li, img,ol{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+}
+body {
+    line-height: 1;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>发布想法</title>
+    <link rel="stylesheet" href="./css/reset-my.css">
+    <link rel="stylesheet" href="./css/note-send.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/default-style.css">
+    <link rel="stylesheet" href="./css/aos.css">
+    <link rel="stylesheet" href="./css/navi.css">
+    
+    <script src="jquery/jquery-3.3.1.min.js"></script>
+    <script src="jquery/aos.js"></script>
+    <script src="js/note-send.js"></script>
+  </head>
+  <body>
+    <script src="./js/background.js"></script>
+    <script src="js/navi.js"></script>
+    <div class="wrap-user-information">
+      <div class="wrap-send-area" data-aos="flip-down">
+        <h1>发布想法</h1>
+        <div class="wrap-fieldset-size">
+          <div class="user-information">
+            <ul>
+              <li>
+                <div class="wrap-note-author">
+                  <p class="input-thing fl-left">作者：</p>
+                  <div id="login_author" class="login-data fl-left"></div>
+                </div>
+              </li>
+              <li>
+                <div class="wrap-note-title">
+                  <p class="input-thing fl-left">标题：</p>
+                  <input type="text" id="send_title" class="send-content fl-left">
+                  <div id="confirm_title" class="confirm-style fl-left"></div>
+                </div>
+              </li>
+              <li>
+                <div class="wrap-note-content">
+                  <p class="input-thing fl-left">内容：</p>
+                  <textarea class="send-content fl-left" id="send_content"></textarea>
+                </div>   
+              </li>  
+            </ul>
+          </div> 
+          <div class="wrap-cofirm-submit">          
+            <div id="confirm_content" class="wrap-content-confirm"></div>
+          </div> 
+          <button id="button_submit" class="button-submit">发送</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

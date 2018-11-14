@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>      
+    <meta charset="utf-8">
+    <title>科幻想法</title>
+    <link rel="stylesheet" href="./css/reset-my.css">
+    <link rel="stylesheet" href="./css/detail.css">
+    <link rel="stylesheet" href="./css/aos.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/default-style.css">
+    <link rel="stylesheet" href="./css/navi.css">
+    
+    <script src="jquery/jquery-3.3.1.min.js"></script>
+    <script src="jquery/aos.js"></script>
+    <script src="js/detail.js"></script>
+    <script src="js/reply-data.js"></script>
+  </head>
+  <body>
+    <script src="./js/background.js"></script>
+    <script src="js/navi.js"></script>
+    <div class="wrap-user-information">   
+      <div class="wrap-detail-area" data-aos="flip-down" style="transition-property: all;">
+        <div style="width: 760px;height: 140px;">
+          <div id='note_title'>想法详细</div>
+          <div class="s-info" style="float: right;">
+            <div class="wrap-author">
+              <p class="note-thing">作者：</p>
+              <a id="note_author" class="note-href"></a>
+            </div>
+            <div class="wrap-time">
+              <p class="note-thing">时间：</p>
+              <div id="note_time" class="note-data"></div>
+            </div>
+          </div>
+        </div>
+        <div class="wrap-content">
+          <div id="note_content" class="note-content"></div>
+        </div>
+      </div>
+      <div class="wrap-reply-area" data-aos="flip-up" style="transition-property: all;">
+        <div style='display: inline-block;width: 735px'><button class="button-reply">回复</button></div>
+        <div class="line" style="width: 730px;height:1px;background-color: #a5a8ad;margin:10px auto 30px;"></div>
+        <ul>
+        </ul>
+      </div>      
+    </div>
+  </body>
+</html>

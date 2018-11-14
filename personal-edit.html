@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>个人资料编辑</title>
+
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/reset-my.css">
+    <link rel="stylesheet" href="./css/jcrop/jquery.Jcrop.css"> 
+    <link rel="stylesheet" href="./css/default-style.css">
+    <link rel="stylesheet" href="./css/aos.css">    
+    <link rel="stylesheet" href="./css/personal-edit.css"> 
+    <link rel="stylesheet" href="./css/navi.css"> 
+
+    <script src="./jquery/jquery-3.3.1.min.js"></script>
+    <script src="jquery/aos.js"></script>
+    <script src="jquery/jquery.ui.widget.js"></script>
+    <script src="jquery/jquery.iframe-transport.js"></script>
+    <script src="jquery/jquery.fileupload.js"></script>    
+    <script src="jquery/jquery.Jcrop.min.js"></script>  
+    <script src="./js/personal-edit.js"></script>
+    <script src="./js/personal-edit-profile.js"></script>
+  </head>
+  <body>
+    <script src="./js/background.js"></script> 
+    <script src="js/navi.js"></script>
+    <div class="wrap-user-information">
+      <div class="wrap-edit-area" data-aos="flip-left">
+        <div class="left"> 
+          <div class="topic">
+           <div class="line" style="width: 140px;height:1px;background-color: #e5e9ef;margin:10px auto;"></div>
+           <div class="wrap-com" style="height: 30px;width: 160px;">
+            <div class="com" style="height: 30px;width: 120px;margin: 0px auto;">
+             <p style="color: #3366FF;font-size: 25px;font-weight: 800;width: 100px;line-height: 30px;float: right;">我的信息</p>
+             <img src="img/edit/1.png" style="width:20px; height: 20px;float: right;margin-top: 5px;">
+            </div>
+           </div>
+           <div class="line" style="width: 140px;height:1px;background-color: #e5e9ef;margin:10px auto;"></div>
+          </div>
+          <ul class="edit-message">
+            <li class="m-normal">昵称:</li>
+            <li class="m-normal">用户名:</li>
+            <li class="m-profile"><img src="img/edit/头像.png">我的头像:</li>
+            <li class="m-sign"><img src="img/edit/签名.png">我的签名:</li>
+            <li class="m-normal">性别:</li>
+            <li class="m-normal">出生日期:</li>
+          </ul>
+        </div>     
+        <div class="right">
+          <div class="wrap-input-area"> 
+            <ul class="input-area">
+              <li class="i-normal"><input type="text" id="nickname" class="nickname" autocomplete="off" placeholder="你的昵称" maxlength="20"></li>
+              <li class="i-normal" id="username"></li>
+              <li class="i-profile">
+                <div class="wrap-insertbg"><label for="upload_file"><div class="user-profile"></div></label></div>
+                <input type="file" name="file" id="upload_file" class="pic" accept="image/png,image/jpg,image/jpeg" />
+                <div class="border-line"></div>
+                <div id="wrap-preview"><div class="preview-container"><img></div></div>
+              </li>
+              <li class="i-sign"><textarea class="sign" id="sign" placeholder="请设置您的签名"></textarea></li>
+              <li class="i-normal">
+                <input type="radio" name="sex" id="sex" class="sex" value="male">男
+                <input type="radio" name="sex" id="sex" class="sex" value="female">女
+              </li>
+              <li class="i-normal"><input type="date" id="birthday" /></li>
+            </ul>            
+          </div>
+          <button id="button_submit" class="button-submit">保存</button>
+          <button id="button_exitlog" class="button-submit">注销</button>
+        </div>
+      </div>  
+    </div>
+  </body>
+</html>

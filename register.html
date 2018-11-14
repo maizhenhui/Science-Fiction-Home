@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>注册</title>
+    <link rel="stylesheet" href="./css/reset-my.css">  
+    <link rel="stylesheet" href="./css/register.css"> 
+    <link rel="stylesheet" href="./css/jcrop/jquery.Jcrop.css"> 
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/default-style.css">
+    <link rel="stylesheet" href="./css/aos.css">   
+    <link rel="stylesheet" href="./css/navi.css">
+    
+    <script src="jquery/jquery-3.3.1.min.js"></script>
+    <script src="jquery/aos.js"></script>
+    <script src="jquery/jquery.ui.widget.js"></script>
+    <script src="jquery/jquery.iframe-transport.js"></script>
+    <script src="jquery/jquery.fileupload.js"></script>    
+    <script src="jquery/jquery.Jcrop.min.js"></script>
+    <script src="js/register.js"></script>
+  </head>
+  <body>
+    <script src="js/navi.js"></script>
+    <div class="wrap-user-information">
+      <div class="wrap-fieldset-size" data-aos="fade-up">
+        <div class="wrap-title">
+          <div class="line" style="width: 160px;height:1px;background-color: #e5e9ef;margin:10px auto;float: left;margin-top: 50px;"></div>
+          <div class="register-title" style="float: left;">注册</div>
+          <div class="line" style="width: 160px;height:1px;background-color: #e5e9ef;margin:10px auto;float: left;margin-top: 50px;"></div>
+        </div>
+        <div class="user-information">
+          <ul class="register-show">
+            <li class="wrap-username">
+              <p class="input-thing pli-left">账号：</p>
+              <input type="text" name="username" id="username" class="username pli-left" autocomplete="off">
+              <input type="text" name="username" autocomplete="off" style="position: absolute;top:-999px;">
+              <div id="confirm_username" class="confirm-style pli-left"></div>
+            </li>
+            <li class="wrap-password">
+              <p class="input-thing pli-left">密码：</p>      
+              <input type="password" name="password" autocomplete="off" style="position: absolute;top:-999px;">
+              <input type="password" name="password" id="password" class="password pli-left" autocomplete="off">
+              <div id="confirm_password" class="confirm-style pli-left"></div>
+            </li>
+            <li class="wrap-sex">
+              <p class="input-thing pli-left">性别：</p>
+              <input type="radio" name="sex" id="sex" class="sex" value="male" checked>男
+              <input type="radio" name="sex" id="sex" class="sex" value="female">女
+            </li>
+          </ul>
+        </div>
+        <div class="confirm-submit">
+          <ul class="register-show">
+            <li>
+              <div id="confirm_userdata" class="confirm-result"></div>          
+            </li>
+            <li>
+              <button id="button_submit" class="button-submit">注册</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

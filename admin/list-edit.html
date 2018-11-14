@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>后台</title>
+
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/reset-my.css">
+    <link rel="stylesheet" href="../css/default-style.css">
+
+    <script src="../jquery/jquery-3.3.1.min.js"></script>
+    <script src="../jquery/jquery.ui.widget.js"></script>
+    <script src="../jquery/jquery.iframe-transport.js"></script>    
+    <script src="../jquery/jquery.fileupload.js"></script>
+    <script src="./js/list-receive.js"></script>
+    <style>
+      body{
+        background: url('../img/back1.jpg') fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }  
+      div.wrap-user-information{
+        margin: 0px auto;
+        max-width:1100px;   
+        padding-top:100px;
+      }  
+      div.wrap-edit-area {
+        margin: 0px auto;
+        width: 800px;
+        background-color:#fff;
+        border-radius: 4px;
+      }
+      .left{
+        float: left;
+        width: 150px;
+        height: 570px;
+        position: relative;     
+      }
+      .right{
+        float: left;
+        width: 650px;
+        height: 570px;
+        position: relative;
+        border-top:1px solid #e1e2e5;
+      } 
+      ul.admin-navi li img{
+        width:30px;
+        height:30px;
+        float:left;
+        margin-left: 30px;
+        margin-top: 5px;
+      }
+      ul.admin-navi{  
+        width:150px;
+        position: absolute;
+      }
+      li.m-normal{
+        height: 60px;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 60px;
+        border-top:1px solid #e1e2e5;
+        border-right:1px solid #e1e2e5;
+        background-color:#fafafa;
+        cursor: pointer;
+      }
+      #roundabout-edit{
+        border-bottom: 1px solid #e1e2e5;
+      }
+      #list-edit{
+        background: #00a1d7!important;
+        color: #fff;
+      }
+      #movie-send:hover,#novel-send:hover,#comic-send:hover,#news-send:hover,#rank-edit:hover,#roundabout-edit:hover{
+        background-color: #e1e4ea;
+      }
+      ul.admin-navi li{
+        text-align: center;
+        list-style:none;
+      }
+      ul.input-area li{
+        text-align: left;
+        list-style:none;
+        line-height: 40px;
+        padding-left: 10px;
+      }     
+      div.border-line{
+        position: relative;
+        margin-top:10px;
+        margin-left:10px; 
+        margin-right:10px;
+        width: 1px;
+        background: #e5e9ef;
+        height: 155px;
+        float: left;
+      }
+      .admin-title{
+        font-size: 30px;
+        font-weight: 600;
+        text-align: center;
+        padding: 20px 0px;
+      }
+      .left  a{
+        color: black;
+        text-decoration: none;
+      }
+      .list-title{
+        height: 22px;
+      }
+      .list-title p.id{
+        padding-left: 10px;
+        width: 50px;
+        text-align:right;
+        float: left;
+      }
+      .list-title p.title{
+        padding-left: 50px;
+        width: 400px;
+        text-align:center;
+        float: left;
+      }      
+      .list-title p.operation{
+        width: 140px;
+        text-align:center;
+        float: left;
+      }
+      .admin-content{
+        display: inline-block;
+      }        
+      .filter{
+        height: 20px;
+        padding: 10px;
+      }
+      .list-page{
+        height: 35px;
+        text-align: center;
+      }
+      .page-area{
+        height: 30px;
+        padding-top: 10px;
+        display: inline-block;
+      }    
+       .jump-page{
+        height: 30px;
+        text-align: center;
+      }   
+      .jump-area{
+        height: 30px;
+        line-height: 25px;
+        display: inline-block;
+      }        
+      .wrap-list-content{
+        height: 440px;
+      }
+      .wrap-list-content ul{
+        list-style:none;
+        padding-top:5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap-user-information">
+      <div class="wrap-edit-area" data-aos="flip-left">
+        <div class="admin-title">科幻之家-后台</div>
+        <div class="admin-content">
+          <div class="left"> 
+            <ul class="admin-navi">
+              <a href="./index.html"><li class="m-normal" id="news-send">新闻推送</li></a>
+              <a href="./novel-send.html"><li class="m-normal" id="novel-send">小说推送</li></a>
+              <a href="./comic-send.html"><li class="m-normal" id="comic-send">动漫推送</li></a>
+              <a href="./movie-send.html"><li class="m-normal" id="movie-send">电影推送</li></a>
+              <li class="m-normal" id="list-edit">推送列表</li>
+              <a href="./rank-edit.html"><li class="m-normal" id="rank-edit">排行编辑</li></a>
+              <a href="./roundabout-edit.html"><li class="m-normal" id="roundabout-edit">轮播管理</li></a>
+            </ul>
+          </div>     
+          <div class="right">
+            <div class="filter">
+              <select id="order" style="float:right;margin:0px 5px;">
+                <option value="order_by_id">按id排序</option>
+              </select> 
+              <i class="fa fa-sort" style="float:right;margin-top: 1px;"></i>     
+              <i class="fa fa-list" style="float:left;margin-top: 2px;"></i>
+              <select id="type" style="float:left;margin:0px 5px;">
+                <option value="news">新闻</option>
+                <option value="movie">电影</option>
+                <option value="novel">小说</option>
+                <option value="comic">动漫</option>
+                <option value="note">想法</option>
+              </select>   
+            </div>        
+            <div class="list-title"><p class="id">id</p><p class="title">标题</p><p class="operation">操作</p></div>
+            <div class="wrap-list-content"><ul></ul></div>
+            <div class="list-page"><div class='page-area'></div></div>
+            <div class='jump-page'><div class='jump-area'></div></div>            
+          </div>
+        </div>
+      </div>  
+    </div>
+  </body>
+</html>
