@@ -177,6 +177,8 @@
 ## 浏览:
  ###  · 主页
  ![主页](https://github.com/maizhenhui/Science-Fiction-Home/blob/master/md.pic/true-index.jpg)
+ ###  · 资料编辑
+ ![主页](https://github.com/maizhenhui/Science-Fiction-Home/blob/master/md.pic/personal-edit.jpg)
  ###  · 主页-文章推荐（常态）
  ![主页](https://github.com/maizhenhui/Science-Fiction-Home/blob/master/md.pic/true-index-intr.jpg)
  ###  · 主页-文章推荐（动态）
