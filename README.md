@@ -176,16 +176,26 @@
 
 ## 浏览:
  ###  · 主页
- ![主页](https://github.com/maizhenhui/Web-Note-Project/blob/master/.md.pic/index.png)
- ###  · 登录
- ![主页](https://github.com/maizhenhui/Web-Note-Project/blob/master/.md.pic/login.png)
- ###  · 注册+动态验证
- ![主页](https://github.com/maizhenhui/Web-Note-Project/blob/master/.md.pic/confirm.png)
- ###  · 留言
- ![主页](https://github.com/maizhenhui/Web-Note-Project/blob/master/.md.pic/note-send.png)
- ###  · 留言+回复查看
- ![主页](https://github.com/maizhenhui/Web-Note-Project/blob/master/.md.pic/detail-reply.png)
- ###  · 留言回复
- ![主页](https://github.com/maizhenhui/Web-Note-Project/blob/master/.md.pic/note-reply.png)  
- ###  · 用户信息查看
- ![主页](https://github.com/maizhenhui/Web-Note-Project/blob/master/.md.pic/personal-data.png)
+ ![主页](https://github.com/maizhenhui/Science-Fiction-Home/blob/master/md.pic/true-index.jpg)
+ ###  · 主页-文章推荐（常态）
+ ![主页](https://github.com/maizhenhui/Science-Fiction-Home/blob/master/md.pic/true-index-intr.jpg)
+ ###  · 主页-文章推荐（动态）
+ ![主页](https://github.com/maizhenhui/Science-Fiction-Home/blob/master/md.pic/true-index-hovor.jpg)
+ ###  · 新闻列表
+ ![主页](https://github.com/maizhenhui/Science-Fiction-Home/blob/master/md.pic/page-list-news.jpg)
+ ###  · 电影列表
+ ![主页](https://github.com/maizhenhui/Science-Fiction-Home/blob/master/md.pic/page-list-movie.jpg)
+ ###  · 动漫列表
+ ![主页](https://github.com/maizhenhui/Science-Fiction-Home/blob/master/md.pic/page-list-comic.jpg)  
+ ###  · 小说列表
+ ![主页](https://github.com/maizhenhui/Science-Fiction-Home/blob/master/md.pic/page-list-novel.jpg)
+ ###  · 文章区
+ ![主页](https://github.com/maizhenhui/Science-Fiction-Home/blob/master/md.pic/page-culture.jpg)
+ ###  · 留言列表
+ ![主页](https://github.com/maizhenhui/Science-Fiction-Home/blob/master/md.pic/page-list-note.jpg)
+ ###  · 留言+回复
+ ![主页](https://github.com/maizhenhui/Science-Fiction-Home/blob/master/md.pic/note-detail.jpg)
+  ###  · 后台-文章编辑
+ ![主页](https://github.com/maizhenhui/Science-Fiction-Home/blob/master/md.pic/admin-page-edit.jpg)
+  ###  · 后台-轮播图编辑
+ ![主页](https://github.com/maizhenhui/Science-Fiction-Home/blob/master/md.pic/admin-roundabout-edit.jpg)
